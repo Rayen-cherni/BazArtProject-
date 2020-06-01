@@ -1,0 +1,230 @@
+<!-- Grid row -->
+<div class="row" role="listbox" style="margin-top:1em; margin: auto;">
+    <div class="carousel-item active">
+        <div class="col-md-12 mb-3">
+
+            <img src="assets/images/imagesArticles/1.png" id="imgPrincipale" class="img-fluid z-depth-1"
+                alt="Responsive image">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="" summary="Barre publicigaire">
+    <img class="w-100" src="assets/images/imagesArticles/domicile.jpg" alt="" />
+</div>
+
+
+
+<div class="row noMargin pt-3 pb-3 mt-3">
+    <div class="container pb-3 mt-3">
+        <div class="row" summary="Acrroches commerciales">
+            <div class="col-sm-8 offset-sm-2 pb-3 col-md-4 offset-md-0">
+                <a href="categorie/robes_combinaisons_ensembles_17.html#fileAriane" style="cursor:hand;" title="">
+                    <img class="w-100" src="assets/images/imagesArticles/nouveautes6.jpg" alt="" />
+                </a>
+
+
+            </div>
+            <div class="col-sm-8 offset-sm-2 pb-3 col-md-4 offset-md-0">
+                <a href="categorie/tops_t_shirts_chemises_11.html#fileAriane" style="cursor:hand;" title="">
+                    <img class="w-100" src="assets/images/imagesArticles/3.jpg" alt="" />
+                </a>
+
+
+            </div>
+            <div class="col-sm-8 offset-sm-2 pb-3 col-md-4 offset-md-0">
+                <a href="categorie/robes_combinaisons_ensembles_17.html#fileAriane" style="cursor:hand;" title="">
+                    <img class="w-100" src="assets/images/imagesArticles/nouveautes4.jpg" alt="" />
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container pb-3 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="flex-fill" style="z-index:44;">
+                <div class="titreListeArticle">
+                    &nbsp;
+                    A NE PAS RATER &nbsp;
+                    <div class="blooshop_fond_gris" style="z-index:5;">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="espace"></div>
+</div>
+
+<!-- ****** Article Section ******* -->
+
+<div class="row blooshop_fond_gris noMargin pt-3 pb-3 mt-3">
+    <div class="container" id="imagesAccueil">
+        <section class="container text-center">
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="p-1 p-md-3 col-3 mb-0 pb-4" *ngFor=" let Article of Articles_rater_pas">
+                    <!-- Card -->
+                    <div class="card card-cascade narrower card-ecommerce">
+                        <!-- Card image view-cascade -->
+                        <div class="view overlay waves-effect">
+                            <a>
+            
+                                       
+                                    <img src={{Article.source}} id='imgList8193'
+                                    class="card-img-top img-responsive img-rounded photo_pleine"
+                                    alt="Combinaison Femme Cargo Noir / Réf : 8042"
+                                    title="Combinaison Femme Cargo Noir / Réf : 8042"
+                                    sourceImg1={{Article.source}} sourceImg2={{Article.source2}} appChangeImg
+                                    >
+                                    
+                                <div class="NewPromoExclu blooshop_fond_gris">
+                                    NOUVEAUTÉ! </div>
+                                <div class="rgba-white-slight reduireNewPromoExclu"></div>
+                            </a>
+                        </div>
+                        <!-- Card image -->
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center m-1">
+
+                            <!-- Description -->
+                            <p class="card-text cardTextLibelle">
+                                <a href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php#fileAriane"
+                                    title="Combinaison Femme Cargo Noir ">
+                                    {{Article. description}} </a>
+                            </p>
+
+
+                            <div class="text_couleur" style="min-height: 22px;" >
+
+                                <a class="lien_liste_produit_coloris" title="Combinaison Femme Cargo Noir / Réf : 8042"
+                                    href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php" *ngFor="let color of Article.color" >
+
+                                    <img src="{{color.sourceColor }}" alt="{{color.nom}}" title="{{color.nom}}" class="coloris"
+                                    onmouseover="javascript:document.getElementById('imgList8193').src=color.sourcePic ;return true;">
+                                </a>
+
+                                <!-- <a class="lien_liste_produit_coloris" title="Combinaison Femme Cargo Kaki / Réf : 8042"
+                                    href="/article/combinaison_femme_cargo_kaki_ref_8042_8195.php">
+
+                                    <img src="assets/images/coloris/4851_kaki.jpg" alt="Kaki" title="Kaki"
+                                        class="coloris"
+                                        onmouseover="javascript:document.getElementById('imgList8193').src='/image/article/liste/combinaison_femme_cargo_kaki_ref_8042_8195.jpg?s=015703';return true;">
+                                </a>
+
+                                <a class="lien_liste_produit_coloris" title="Combinaison Femme Cargo Beige / Réf : 8042"
+                                    href="/article/combinaison_femme_cargo_beige_ref_8042_8194.php">
+                                    <img src="assets/images/coloris/4886_beige.jpg" alt="Beige" title="Beige"
+                                        class="coloris"
+                                        onmouseover="javascript:document.getElementById('imgList8193').src='/image/article/liste/combinaison_femme_cargo_beige_ref_8042_8194.jpg?s=015703';return true;">
+                                </a> -->
+
+                            </div>
+
+                            <!-- Card footer -->
+                            <div class="card-footer px-1" style="border:0;">
+                                <span class="float-left font-weight-bold">
+                                    <span class="prix_normal">{{Article.price}} €</span>
+
+                                </span>
+
+                                <span class="float-right">
+                                    <a title="Choisir votre référence (3)" type="button" href=""
+                                        data-toggle-tooltip="tooltip" data-toggle="modal" data-placement="top"
+                                        data-target="#modalChoisirReference-1" class="material-tooltip-main">
+                                        <img src="assets/images/graphisme/blooshop_bag.png" width="30" alt="" border="0"
+                                            class="ml-1"
+                                            onclick="javascript:changeArticleReferenceStock(8193,'30650',86);">
+                                    </a>
+                                </span>
+
+                                <span class="float-right justify-content-right wl_8193">
+                                    <span class="wishlist wl_8193">
+                                        <img src="assets/images/graphisme/coeur_rose_vide.png" width="30" alt=""
+                                            border="0" onclick="AddRemoveWishList(0,8193,'Add','');return false;">
+                                    </span>
+                                </span>
+                            </div> <!-- Card footer -->
+                        </div>
+                        <!-- Card content -->
+                    </div>
+                    <!-- Card -->
+                </div>
+
+                <!-- Grid column -->
+
+
+                <!-- Modal debut : modalAjouterPanier -->
+                <div class="modal fade right" id="modalAjouterPanier-1" tabindex="-1" role="dialog"
+                    aria-labelledby="modalAjouterPanierLabel">
+                    <div id="modalDialogAjouterPanier-1"
+                        class="modal-dialog modal-dialog-scrollable modal-fluid modal-full-height modal-right modal-notify modal-info modalPanier"
+                        role="document">
+                        <div class="modal-content modal-content-Panier modal-full-height">
+                            <!--Header-->
+                            <div class="modal-header blooshop_fond_gris">
+                                <p class="heading lead font-weight-bold">
+                                    <img src="graphisme/blooshop_bag_blanc.png" width="30" alt="" border="0"
+                                        class="mt-n2">
+                                    Panier
+                                </p>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text">×</span>
+                                </button>
+                            </div>
+
+                            <!--Body-->
+                            <div class="modal-body scrollbar-blooshop" id="modalAjouterPanierLabel">
+                                <div class="text-center">
+                                    <i class="fa fa-check fa-3x mb-3 animated rotateIn success-ic blooshop_noir">
+                                        <br>
+                                        <span class="texte_14">Votre <strong>article</strong> est ajouté au
+                                            panier</span>
+                                    </i>
+                                </div>
+
+                                <p id="listePanier" class="text-center">
+                                    <strong>Aucun article </strong>
+                                </p>
+
+                            </div>
+
+                            <!--Footer-->
+                            <div class="modal-footer justify-content-center">
+                                <a type="button"
+                                    class="btn btnInput waves-effect waves-light white-ic blooshop_fond_gris"
+                                    data-dismiss="modal">
+                                    <i class="fa fa-angle-double-left m-0 p-2"></i>
+                                    Continuer
+                                </a>
+                                <a type="button"
+                                    class="btn btnInput waves-effect waves-light white-ic blooshop_fond_gris_BA"
+                                    href="panier.php">
+                                    <img src="graphisme/blooshop_bag_blanc.png" width="30" alt="" border="0"
+                                        class="mr-2">
+                                    Panier
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Grid row -->
+
+        </section>
+
+    </div>
+</div><br>
+<div id="espace"></div>
