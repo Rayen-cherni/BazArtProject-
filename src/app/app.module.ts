@@ -12,12 +12,17 @@ import { ChaussuresComponent } from './chaussures/chaussures.component';
 import { AccessoiresComponent } from './accessoires/accessoires.component';
 import { PromotionComponent } from './promotion/promotion.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
+import { AnimationComponent } from './animation/animation.component';
+import { HomeComponent } from './home/home.component';
 
 //Services
 import { ArticleService } from './services/article.service';
 import { RaterpasService } from './services/raterpas.service';
-import { HomeComponent } from './home/home.component';
+import { MeilleuresVentesService } from './services/meilleures-ventes.service';
+
+// Directives
 import { ChangeImgDirective } from './directives/change-img.directive';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +35,8 @@ import { ChangeImgDirective } from './directives/change-img.directive';
     PromotionComponent,
     NouveautesComponent,
     HomeComponent,
-    ChangeImgDirective
+    ChangeImgDirective,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,7 @@ import { ChangeImgDirective } from './directives/change-img.directive';
     MDBBootstrapModule.forRoot()
 
   ],
-  providers: [ArticleService, RaterpasService ],
+  providers: [ArticleService, RaterpasService, MeilleuresVentesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

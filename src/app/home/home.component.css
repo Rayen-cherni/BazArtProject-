@@ -1,0 +1,14 @@
+#versionForcé{
+  height: 43px;
+    top: -42px;
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    opacity: .9;
+    font-weight: 600;
+    padding: .25em;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-style: italic;
+}

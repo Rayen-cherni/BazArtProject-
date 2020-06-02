@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Raterpas } from '../shared/raterpas';
-import { ARTICLESRATERPAS } from '../shared/articlesRaterPas';
-
+import { MEILLEURES } from '../shared/meilleuresVente';
 import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
-export class RaterpasService {
+export class MeilleuresVentesService {
 
   constructor() { }
 
-  getArticlesRaterPas():  Observable<Raterpas[]> {
-    return of (ARTICLESRATERPAS).pipe(delay(2000));
+  getMeilleures():  Observable<Raterpas[]> {
+    return of (MEILLEURES).pipe(delay(2000));
   }
 }
