@@ -6,12 +6,22 @@ import { AnimationComponent } from '../animation/animation.component';
 import { Article } from '../shared/article';
 import { ArticleService } from '../services/article.service';
 import { MeilleuresVentesService } from '../services/meilleures-ventes.service';
+import { SwiperOptions } from 'swiper';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
- 
+  animations:[
+    trigger('visibility', [
+        state('shown', style({
+            transform: 'scale(1.0)',
+            opacity: 0
+        })),
+        transition('* => *', animate('0.5s ease-in-out'))
+    ])
+  ]
 })
 export class HomeComponent implements OnInit {
 
@@ -20,19 +30,12 @@ export class HomeComponent implements OnInit {
   Middle: Article[];
   Meilleures: Raterpas[];
 
-  slides: any = [[]];
-  chunk(arr: any, chunkSize: any) {
-    let R = [];
-    for (let i = 0, len = arr.length; i < len; i += chunkSize) {
-      R.push(arr.slice(i, i + chunkSize));
-    }
-    return R;
-  }
+  visibility = 'shown';
   
-
   constructor(private raterpasService : RaterpasService,
     private articleService: ArticleService,
-    private meilleuresVenteService: MeilleuresVentesService) { }
+    private meilleuresVenteService: MeilleuresVentesService) { 
+    }
 
   ngOnInit(): void {
     this.raterpasService.getArticlesRaterPas()
@@ -44,14 +47,36 @@ export class HomeComponent implements OnInit {
 
     this.meilleuresVenteService.getMeilleures()
     .subscribe((meilleuresVente)=>this.Meilleures=meilleuresVente);
-    this.slides = this.chunk(this.Meilleures, 4);
     
   }
 
-  
-
-koko(){
-  console.log(this.Meilleures.length);
-}
+  config: SwiperOptions = {
+    pagination: { el: '.swiper-pagination', clickable: true },
+    autoHeight: true,
+    allowTouchMove: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: true
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 4
+      },
+      500: {
+        slidesPerView: 3
+      },
+      400: {
+        slidesPerView: 2
+      },
+      300: {
+        slidesPerView: 1
+      }
+    },
+    navigation: {
+      nextEl: '.carousel-control-next',
+      prevEl: '.carousel-control-prev'
+    },
+    loop: true
+  };
 
 }

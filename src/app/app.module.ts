@@ -14,6 +14,8 @@ import { PromotionComponent } from './promotion/promotion.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { AnimationComponent } from './animation/animation.component';
 import { HomeComponent } from './home/home.component';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+
 
 //Services
 import { ArticleService } from './services/article.service';
@@ -41,7 +43,8 @@ import { ChangeImgDirective } from './directives/change-img.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    NgxUsefulSwiperModule
 
   ],
   providers: [ArticleService, RaterpasService, MeilleuresVentesService ],
