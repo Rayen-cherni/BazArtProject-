@@ -26,6 +26,8 @@ import { MeilleuresVentesService } from './services/meilleures-ventes.service';
 import { ChangeImgDirective } from './directives/change-img.directive';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

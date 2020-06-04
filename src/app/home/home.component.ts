@@ -1,27 +1,15 @@
 import { Component, OnInit, ViewChild, ElementRef, Input, HostListener, AfterViewInit,  } from '@angular/core';
 import { Raterpas } from '../shared/raterpas';
 import { RaterpasService } from '../services/raterpas.service';
-import { trigger, state, style, animate, transition } from '@angular/animations';
-import { AnimationComponent } from '../animation/animation.component';
 import { Article } from '../shared/article';
 import { ArticleService } from '../services/article.service';
 import { MeilleuresVentesService } from '../services/meilleures-ventes.service';
 import { SwiperOptions } from 'swiper';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  animations:[
-    trigger('visibility', [
-        state('shown', style({
-            transform: 'scale(1.0)',
-            opacity: 0
-        })),
-        transition('* => *', animate('0.5s ease-in-out'))
-    ])
-  ]
 })
 export class HomeComponent implements OnInit {
 
@@ -29,8 +17,7 @@ export class HomeComponent implements OnInit {
   Articles_rater_pas: Raterpas[];
   Middle: Article[];
   Meilleures: Raterpas[];
-
-  visibility = 'shown';
+  moment: string;
   
   constructor(private raterpasService : RaterpasService,
     private articleService: ArticleService,
@@ -38,6 +25,8 @@ export class HomeComponent implements OnInit {
     }
 
   ngOnInit(): void {
+  
+
     this.raterpasService.getArticlesRaterPas()
     .subscribe(  (articleNeRaterPas) => this.Articles_rater_pas = articleNeRaterPas);
     
@@ -47,6 +36,7 @@ export class HomeComponent implements OnInit {
 
     this.meilleuresVenteService.getMeilleures()
     .subscribe((meilleuresVente)=>this.Meilleures=meilleuresVente);
+
     
   }
 
@@ -78,5 +68,9 @@ export class HomeComponent implements OnInit {
     },
     loop: true
   };
+
+  Afficher(msg){
+    console.log(msg);
+  }
 
 }

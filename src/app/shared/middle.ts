@@ -4,7 +4,7 @@ export const Middle: Article[] = [
     {
         id: '0',
         name: 'pull',
-        image: 'assets/images/imagesArticles/pulls.jpg',
+        image: 'assets/images/imagesArticles/3.jpg',
         price: '4.99',
         color: ['red', 'bleu'],
         category: 'pull',
@@ -14,7 +14,7 @@ export const Middle: Article[] = [
     {
         id: '1',
         name: 'chaussures de soirée ',
-        image: 'assets/images/imagesArticles/chaussures.jpg',
+        image: 'assets/images/imagesArticles/nouveautes2.jpg',
         price: '4.99',
         color: ['red', 'bleu'],
         category: 'chaussures',

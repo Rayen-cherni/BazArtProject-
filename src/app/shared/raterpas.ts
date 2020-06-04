@@ -1,6 +1,7 @@
 import { Similaire } from './similaire';
 
 export class Raterpas {
+    ref: string;
     description: string;
     price: string;
     source:string;
