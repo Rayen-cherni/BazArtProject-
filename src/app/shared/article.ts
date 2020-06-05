@@ -1,10 +1,12 @@
+import { Similaire } from './similaire';
+
 export class Article{
-    id: string;
-    name: string;
-    image: string;
+    ref: string;
+    description: string;
     price: string;
-    color: string[];
-    category: string;
-    promotion:boolean;
-    nouveau: boolean;
+    source:string;
+    source2:string;
+    source3:string;
+    source4:string;
+    color: Similaire[]
 }

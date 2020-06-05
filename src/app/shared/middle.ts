@@ -1,25 +1,28 @@
 import { Article } from './article'
+import { Similaire } from './similaire';
 
 export const Middle: Article[] = [
     {
-        id: '0',
-        name: 'pull',
-        image: 'assets/images/imagesArticles/3.jpg',
-        price: '4.99',
-        color: ['red', 'bleu'],
-        category: 'pull',
-        promotion: true,
-        nouveau: false,
+        ref: '0',
+        description: 'pull',
+        price:'4.99',
+        source: 'assets/images/imagesArticles/3.jpg',
+        source2:'',
+        source3:'',
+        source4:'',
+        color: Similaire[''],
     },
+    
     {
-        id: '1',
-        name: 'chaussures de soirée ',
-        image: 'assets/images/imagesArticles/nouveautes2.jpg',
-        price: '4.99',
-        color: ['red', 'bleu'],
-        category: 'chaussures',
-        promotion: true,
-        nouveau: true,
+        ref: '1',
+        description: 'chaussures de soirée',
+        price:'4.99',
+        source: 'assets/images/imagesArticles/nouveautes2.jpg',
+        source2:'',
+        source3:'',
+        source4:'',
+        color: Similaire[''],
     },
 
 ];
+

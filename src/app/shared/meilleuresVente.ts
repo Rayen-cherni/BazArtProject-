@@ -7,6 +7,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '22,23',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -32,6 +34,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '33',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -57,6 +61,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '100,44',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -81,6 +87,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '2222',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -105,6 +113,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '700000',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -129,6 +139,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '6000',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -153,6 +165,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '44,23',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -178,6 +192,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '155,23',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -203,6 +219,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '99,23',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',
@@ -228,6 +246,8 @@ export const MEILLEURES : Raterpas[] = [
         price: '88,23',
         source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
         source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
+        source3:'',
+        source4:'',
         color: [
             {
                 nom: 'kaki',

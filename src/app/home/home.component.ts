@@ -5,6 +5,7 @@ import { Article } from '../shared/article';
 import { ArticleService } from '../services/article.service';
 import { MeilleuresVentesService } from '../services/meilleures-ventes.service';
 import { SwiperOptions } from 'swiper';
+import { wishList } from '../shared/wishList';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,9 @@ export class HomeComponent implements OnInit {
   Middle: Article[];
   Meilleures: Raterpas[];
   moment: string;
+  
+  //for wishList 
+  list: Raterpas[];
   
   constructor(private raterpasService : RaterpasService,
     private articleService: ArticleService,
@@ -37,6 +41,7 @@ export class HomeComponent implements OnInit {
     this.meilleuresVenteService.getMeilleures()
     .subscribe((meilleuresVente)=>this.Meilleures=meilleuresVente);
 
+    this.list = wishList;
     
   }
 
@@ -69,8 +74,17 @@ export class HomeComponent implements OnInit {
     loop: true
   };
 
-  Afficher(msg){
+  Ajouter(msg: Raterpas){
     console.log(msg);
+    this.list.push(msg);
+    
   }
-
+   openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+   closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
 }

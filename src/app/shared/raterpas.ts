@@ -6,7 +6,7 @@ export class Raterpas {
     price: string;
     source:string;
     source2:string;
+    source3:string;
+    source4:string;
     color: Similaire[]
-    // color:string[];
-    // srcArticlesMemeColor: string[];
 }

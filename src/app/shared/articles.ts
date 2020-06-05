@@ -1,64 +1,142 @@
 import { Article } from './article'
 
-export const ARTICLES : Article[] = [
+export const ARTICLES: Article[] = [
     {
-        id: '0',  
-        name: 'pull',
-        image: '/assets/images/imagesArticles/pulls.png',
+        ref: '0',
+        description: 'pull',
         price: '4.99',
-        color:['red', 'bleu'],
-        category: 'pull',
-        promotion: true, 
-        nouveau : false,   
+        source: '/assets/sources/sourcesArticles/pulls.png',
+        source2: '',
+        source3: '',
+        source4: '',
+        color: [
+            {
+                nom: 'red',
+                sourceColor: '',
+                sourcePic: '',
+            },
+            {
+                nom: 'bleu',
+                sourceColor: '',
+                sourcePic: '',
+
+            },
+        ]
     },
     {
-        id: '1',  
-        name: 'chaussures de soirée ',
-        image: '/assets/images/imagesArticles/chaussures.png',
+        ref: '1',
+        description: 'chaussures de soirée',
         price: '4.99',
-        color:['red', 'bleu'],
-        category: 'chaussures',
-        promotion: true,
-        nouveau: true,
+        source: '/assets/sources/sourcesArticles/chaussures.png',
+        source2: '',
+        source3: '',
+        source4: '',
+        color: [
+            {
+                nom: 'red',
+                sourceColor: '',
+                sourcePic: '',
+            },
+            {
+                nom: 'bleu',
+                sourceColor: '',
+                sourcePic: '',
+
+            },
+        ]
     },
+
     {
-        id: '2',  
-        name: 'pull de luxe ',
-        image: '/assets/images/imagesArticles/1.png',
+
+        ref: '2',
+        description: 'pull',
         price: '4.99',
-        color:['red', 'bleu'],
-        category: 'pull',
-        promotion: false,
-        nouveau: true,
+        source: '/assets/sources/sourcesArticles/1.png',
+        source2: '',
+        source3: '',
+        source4: '',
+        color: [
+            {
+                nom: 'red',
+                sourceColor: '',
+                sourcePic: '',
+            },
+            {
+                nom: 'bleu',
+                sourceColor: '',
+                sourcePic: '',
+
+            },
+        ]
     },
+
     {
-        id: '3',  
-        name: 'accessoire de lux ',
-        image: '/assets/images/imagesArticles/accessoires.png',
+        ref: '3',
+        description: 'accessoire de lux',
         price: '4.99',
-        color:['red', 'bleu'],
-        category: 'accessoires',
-        promotion: false,
-        nouveau: false,
+        source: '/assets/sources/sourcesArticles/accessoires.png',
+        source2: '',
+        source3: '',
+        source4: '',
+        color: [
+            {
+                nom: 'red',
+                sourceColor: '',
+                sourcePic: '',
+            },
+            {
+                nom: 'bleu',
+                sourceColor: '',
+                sourcePic: '',
+
+            },
+        ]
     },
+
     {
-        id: '4',  
-        name: 'pull de lux femme',
-        image: '/assets/images/imagesArticles/2.png',
+        ref: '4',
+        description: 'pull de lux femme',
         price: '4.99',
-        color:['red', 'bleu'],
-        category: 'pull',
-        promotion: true,
-        nouveau : false,
+        source: '/assets/sources/sourcesArticles/2.png',
+        source2: '',
+        source3: '',
+        source4: '',
+        color: [
+            {
+                nom: 'red',
+                sourceColor: '',
+                sourcePic: '',
+            },
+            {
+                nom: 'bleu',
+                sourceColor: '',
+                sourcePic: '',
+
+            },
+        ]
     },
+
     {
-        id: '5',  
-        name: 'accessoire de femme moderne ',
-        image: '/assets/images/imagesArticles/3.png',
+        ref: '5',
+        description: 'accessoire de femme moderne',
         price: '4.99',
-        color:['red', 'bleu'],
-        category: 'accessoires',
-        promotion: false,
-        nouveau: true,
+        source: '/assets/sources/sourcesArticles/3.png',
+        source2: '',
+        source3: '',
+        source4: '',
+        color: [
+            {
+                nom: 'red',
+                sourceColor: '',
+                sourcePic: '',
+            },
+            {
+                nom: 'bleu',
+                sourceColor: '',
+                sourcePic: '',
+
+            },
+        ]
     },
+
 ];

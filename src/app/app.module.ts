@@ -24,6 +24,8 @@ import { MeilleuresVentesService } from './services/meilleures-ventes.service';
 
 // Directives
 import { ChangeImgDirective } from './directives/change-img.directive';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { SingleItemComponent } from './single-item/single-item.component';
 
 
 
@@ -40,7 +42,9 @@ import { ChangeImgDirective } from './directives/change-img.directive';
     NouveautesComponent,
     HomeComponent,
     ChangeImgDirective,
-    AnimationComponent
+    AnimationComponent,
+    WishlistComponent,
+    SingleItemComponent
   ],
   imports: [
     BrowserModule,

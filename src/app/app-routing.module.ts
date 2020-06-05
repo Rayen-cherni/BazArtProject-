@@ -6,6 +6,8 @@ import { PromotionComponent } from './promotion/promotion.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { PullComponent } from './pull/pull.component';
 import { HomeComponent } from './home/home.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { SingleItemComponent } from './single-item/single-item.component';
 
 
 const routes: Routes = [
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path:'promotion', component: PromotionComponent},
   {path: 'nouveautes', component:NouveautesComponent},
   {path: 'pull', component:PullComponent},
+  {path: 'wishList', component: WishlistComponent},
+  {path: 'single', component: SingleItemComponent},
   {path:'', redirectTo:'home', pathMatch:'full'}
 ];
 
