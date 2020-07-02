@@ -1,0 +1,144 @@
+<!-- header -->
+<header>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar" id="navbarPrincipal">
+		<a class="navbar-brand" routerLink="/home" routerLinkActive="active"><img
+				style="max-width:200px;max-height: 35px;" ici="ici803" src="/assets/images/graphisme/logoBazArt.png"
+				alt="Blooshop" title="Blooshop" class="img-responsive" routerLink="/nouveautes"
+				routerLinkActive="active" /></a>
+
+		<span class="visible-xs visible-sm">
+			<a class="" routerLink="/wishList" routerLinkActive="active" title="Ma Wishlist"><img
+					src="/assets/images/graphisme/coeur_rose_vide.png" width="30" height="30" alt="" border="0" /></a>
+
+			<a class="" href="compte_client57f8.html?ajouter_modifier=connexion"><img
+					src="/src/assets/images/graphisme/coeur_plein.png" width="30" alt="" height="30" border="0" /></a>
+
+			<a class="" routerLink="/wishList" routerLinkActive="active"><img
+					src="/assets/images/graphisme/blooshop_bag.png" width="30" height="30" alt="" border="0" class="" />
+				<span id="nbArticleEnteteSmartphone" class="noVisible">
+					<span class="badge blooshop_fond_gris_BA rounded-circle ml-n2">
+					</span>
+				</span>
+			</a>
+
+		</span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<img src="/assets/images/graphisme/search_icone.gif" id="bouton_search" />
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav m-auto b">
+				<li class="nav-item ml-3 mr-3"><a class="nav-link" routerLink="/nouveautes"
+						routerLinkActive="active">NOUVEAUTÉS</a></li>
+				<li class="nav-item dropdown ml-3 mr-3">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown"
+						href="regroupement/vetements_femme.html#fileAriane" title="VÊTEMENTS FEMME"
+						aria-haspopup="true">
+						VÊTEMENTS FEMME <b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu multi-level">
+
+						<li>
+							<a class="nav-link lien_menu" id="miseEnForme">TENUE DE SOIREE</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu" routerLink="/pull" routerLinkActive="active"
+								id="miseEnForme">PULLS</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu"
+								href="categorie/jeans_pantalons_joggings_leggings_9.html#fileAriane"
+								id="miseEnForme">JEANS, PANTALONS, JOGGINGS & LEGGINGS</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu" href="categorie/tops_t_shirts_chemises_11.html#fileAriane"
+								id="miseEnForme">TOPS, T-SHIRTS, CHEMISES</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu" href="categorie/manteaux_vestes_gilets_15.html#fileAriane"
+								id="miseEnForme">MANTEAUX, VESTES & GILETS</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu"
+								href="categorie/robes_combinaisons_ensembles_17.html#fileAriane" id="miseEnForme">ROBES,
+								COMBINAISONS & ENSEMBLES</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu" href="categorie/shorts_jupes_18.html#fileAriane"
+								id="miseEnForme">SHORTS & JUPES</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu" href="categorie/chaussures_20.html#fileAriane"
+								routerLink="/chaussures" routerLinkActive="active" id="miseEnForme">CHAUSSURES</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu" href="categorie/accessoires_49.html#fileAriane"
+								routerLink="/accessoires" routerLinkActive="active" id="miseEnForme">ACCESSOIRES</a>
+						</li>
+
+
+						<li>
+							<a class="nav-link lien_menu" href="categorie/maillots_de_bain_35.html#fileAriane"
+								id="miseEnForme">MAILLOTS DE BAIN</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="nav-item ml-3 mr-3">
+					<a class="nav-link" href="promotion.html" title="PROMOTIONS" routerLink="/promotion"
+						routerLinkActive="active">A NE PAS RATER</a>
+				</li>
+
+			</ul>
+			<ul class="navbar-nav nav-flex-icons">
+
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/wishList" routerLinkActive="active" title="Ma Wishlist"><img
+							src="/assets/images/graphisme/coeur_rose_vide.png" width="30" alt="" /></a>
+				</li>
+
+				<li class="nav-item">
+
+
+					<a class="nav-link" routerLink="/wishList" routerLinkActive="active"><img
+							src="/assets/images/graphisme/blooshop_bag.png" width="30" alt="" class="" />
+
+
+						<span id="nbArticleEntete" class="noVisible">
+							<span class="badge blooshop_fond_gris_BA rounded-circle ml-n2">
+							</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<form class="form-inline" action="https://www.blooshop.fr/recherche.php" method="post"
+				onsubmit="return verifRecherche(this)">
+				<div class="md-form my-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Votre recherche..."
+						aria-label="Votre recherche..." name="moteur_recherche_texte" id="moteur_recherche_texte">
+				</div>
+			</form>
+
+
+
+
+		</div>
+	</nav>
+</header>

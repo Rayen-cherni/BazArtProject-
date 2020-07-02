@@ -1,0 +1,228 @@
+<app-header></app-header>
+<div id="espaceForte"></div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="flex-fill" style="z-index:44;">
+            <div class="titreListeArticle">
+                &nbsp;
+                WISHLIST &nbsp;
+                <div class="blooshop_fond_gris" style="z-index:5;">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <p>
+        Cliquer sur <img src="/assets/images/graphisme/coeur_rose_vide.png" width="30" alt="" border="0" /> pour ajouter
+        l'article à
+        votre WishList
+    </p>
+    <p>
+        Cliquer sur <img src="/assets/images/graphisme/coeur_plein.png" width="30" alt="" border="0" /> pour retirer
+        l'article de votre
+        WishList
+    </p>
+
+    <br />
+
+</div>
+
+<!-- Elements in wishList -->
+<div class="row">
+    <div class=" swiper-slide p-1 p-md-3 col-3 mb-0 pb-4" *ngFor=" let wish of list">
+        <!-- Card -->
+        <div class="card card-cascade narrower card-ecommerce">
+            <!-- Card image view-cascade -->
+            <div class="view overlay waves-effect">
+                <a>
+
+                    <img [src]=wish.source id='imgList8193' class="card-img-top img-responsive img-rounded photo_pleine"
+                        alt="{{wish.description}}" title="{{wish.description}}" sourceImg1={{wish.source}}
+                        sourceImg2={{wish.source2}} appChangeImg>
+
+                    <div class="NewPromoExclu blooshop_fond_gris" id="versionForcé">
+                        NOUVEAUTÉ! </div>
+                    <div class="rgba-white-slight reduireNewPromoExclu"></div>
+                </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center m-1">
+
+                <!-- Description -->
+                <p class="card-text cardTextLibelle">
+                    <a href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php#fileAriane"
+                        title="Combinaison Femme Cargo Noir ">
+                        {{wish.description}} </a>
+                </p>
+
+                <div class="text_couleur" style="min-height: 22px;">
+
+                    <a class="lien_liste_produit_coloris" title="{{wish.description}}"
+                        href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php" *ngFor="let color of wish.color">
+
+                        <img src="{{color.sourceColor }}" alt="{{color.nom}}" title="{{color.nom}}" class="coloris"
+                            (mouseenter)="moment=wish.source;wish.source=color.sourcePic;"
+                            (mouseleave)="wish.source=moment;">
+                    </a>
+
+                </div>
+
+                <!-- Card footer -->
+                <div class="card-footer px-1" style="border:0;">
+                    <span class="float-left font-weight-bold">
+                        <span class="prix_normal">{{wish.price}} €</span>
+
+                    </span>
+
+                    <!--******** Add method Add to basket****** -->
+                    <span class="float-right">
+                        <a title="Choisir votre référence (3)" type="button" href="" data-toggle-tooltip="tooltip"
+                            data-toggle="modal" data-placement="top" data-target="#modalChoisirReference-1"
+                            class="material-tooltip-main">
+                            <img src="assets/images/graphisme/blooshop_bag.png" width="30" alt="" border="0"
+                                class="ml-1" onclick="javascript:changeArticleReferenceStock(8193,'30650',86);">
+                        </a>
+                    </span>
+                    <!--******** Add method Add to wishlist****** -->
+
+                    <span class="float-right justify-content-right wl_8193">
+                        <span class="wishlist wl_8193">
+                            <img src="assets/images/graphisme/coeur_plein.png" width="30" alt="" border="0"
+                                onclick="this.src='assets/images/graphisme/coeur_rose_vide.png'" (click)="Suprrimer(wish.ref)">
+                        </span>
+                    </span>
+                </div> <!-- Card footer -->
+            </div>
+            <!-- Card content -->
+        </div>
+        <!-- Card -->
+    </div>
+</div>
+
+
+<!-- Meilluere ventes Section -->
+<div class="container pb-3 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="flex-fill" style="z-index:44;">
+                <div class="titreListeArticle">
+                    &nbsp;
+                    MEILLEURES VENTES &nbsp;
+                    <div class="blooshop_fond_gris" style="z-index:5;">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row blooshop_fond_gris noMargin pt-3 pb-3 mt-3">
+    <div class="container" id="imagesAccueil">
+        <section class="container text-center">
+            <!-- Grid row -->
+            <swiper [config]="config">
+
+                <div class="swiper-wrapper">
+                    <div class=" swiper-slide p-1 p-md-3 col-3 mb-0 pb-4" *ngFor=" let Meilleure of Meilleures">
+                        <!-- Card -->
+                        <div class="card card-cascade narrower card-ecommerce">
+                            <!-- Card image view-cascade -->
+                            <div class="view overlay waves-effect">
+                                <a>
+
+                                    <img [src]=Meilleure.source id='imgList8193'
+                                        class="card-img-top img-responsive img-rounded photo_pleine"
+                                        alt="{{Meilleure.description}}" title="{{Meilleure.description}}"
+                                        sourceImg1={{Meilleure.source}} sourceImg2={{Meilleure.source2}} appChangeImg>
+
+                                    <div class="NewPromoExclu blooshop_fond_gris" id="versionForcé">
+                                        NOUVEAUTÉ! </div>
+                                    <div class="rgba-white-slight reduireNewPromoExclu"></div>
+                                </a>
+                            </div>
+                            <!-- Card image -->
+                            <!-- Card content -->
+                            <div class="card-body card-body-cascade text-center m-1">
+
+                                <!-- Description -->
+                                <p class="card-text cardTextLibelle">
+                                    <a href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php#fileAriane"
+                                        title="Combinaison Femme Cargo Noir ">
+                                        {{Meilleure.description}} </a>
+                                </p>
+
+                                <div class="text_couleur" style="min-height: 22px;">
+
+                                    <a class="lien_liste_produit_coloris" title="{{Meilleure.description}}"
+                                        href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php"
+                                        *ngFor="let color of Meilleure.color">
+
+                                        <img src="{{color.sourceColor }}" alt="{{color.nom}}" title="{{color.nom}}"
+                                            class="coloris"
+                                            (mouseenter)="moment=Meilleure.source;Meilleure.source=color.sourcePic;"
+                                            (mouseleave)="Meilleure.source=moment;">
+                                    </a>
+
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer px-1" style="border:0;">
+                                    <span class="float-left font-weight-bold">
+                                        <span class="prix_normal">{{Meilleure.price}} €</span>
+
+                                    </span>
+
+                                    <!--******** Add method Add to basket****** -->
+                                    <span class="float-right">
+                                        <a title="Choisir votre référence (3)" type="button" href=""
+                                            data-toggle-tooltip="tooltip" data-toggle="modal" data-placement="top"
+                                            data-target="#modalChoisirReference-1" class="material-tooltip-main">
+                                            <img src="assets/images/graphisme/blooshop_bag.png" width="30" alt=""
+                                                border="0" class="ml-1"
+                                                onclick="javascript:changeArticleReferenceStock(8193,'30650',86);">
+                                        </a>
+                                    </span>
+                                    <!--******** Add method Add to wishlist****** -->
+
+                                    <span class="float-right justify-content-right wl_8193">
+                                        <span class="wishlist wl_8193">
+                                            <img src="assets/images/graphisme/coeur_rose_vide.png" width="30" alt=""
+                                                border="0"  onclick="this.src='assets/images/graphisme/coeur_rose_vide.png'" (click)="Suprrimer(Meilleure.ref)">
+                                        </span>
+                                    </span>
+                                </div> <!-- Card footer -->
+                            </div>
+                            <!-- Card content -->
+                        </div>
+                        <!-- Card -->
+                    </div>
+
+                </div>
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="carousel-control-prev " href="#carousel-example-1z" role="button" data-slide="prev">
+                        <span class="blooshop_fond_gris_F5 blooshop_noir fa-angle-left fas p-2 titre_20b"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carousel-example-1z" role="button" data-slide="next">
+                        <span class="blooshop_fond_gris_F5 blooshop_noir fa-angle-right fas p-2 titre_20b"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--/.Controls-->
+
+            </swiper>
+
+        </section>
+    </div>
+</div>
+<div id="espace"></div>
+<!-- Footer -->
+<app-footer></app-footer>

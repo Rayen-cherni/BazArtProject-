@@ -1,0 +1,438 @@
+<app-header></app-header>
+
+<div id="mdb-lightbox-ui"></div>
+<div class="container" *ngIf="ArticleSelected" style="margin: 100px;">
+  <div class="row">
+    <div class="col-3 col-sm-4 col-md-2 noPadding" summary="Images Miniature & Réseaux sociaux">
+      <div class="col-12 scrollable scroll-h-300 scrollbar-rare-wind" id="ImagesMiniature" summary="Images Miniature">
+
+        <!--First row-->
+        <div class="row">
+          <!--First column-->
+          <div class="col-md-12">
+            <div class="mdb-lightbox">
+              <figure class="col-sm-12 col-md-6">
+                <a href={{ArticleSelected.source2}} data-size="800x1200" id="7259_33817">
+                  <img src={{ArticleSelected.source2}} class="img-fluid z-depth-1" />
+                </a>
+              </figure>
+              <figure class="col-sm-12 col-md-6">
+                <a href={{ArticleSelected.source2}} data-size="800x1200" id="7259_33819">
+                  <img src={{ArticleSelected.source2}} class="img-fluid z-depth-1" />
+                </a>
+              </figure>
+              <figure class="col-sm-12 col-md-6">
+                <a href={{ArticleSelected.source2}} data-size="800x1200" id="7259_33820">
+                  <img src={{ArticleSelected.source2}} class="img-fluid z-depth-1" />
+                </a>
+              </figure>
+              <figure class="col-sm-12 col-md-6">
+                <a href={{ArticleSelected.source2}} data-size="800x1200" id="7259_0">
+                  <img src={{ArticleSelected.source2}} class="img-fluid z-depth-1" />
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partie a changer  -->
+
+    <div class="col-9 col-sm-8 col-md-5" summary="Images prinicpale">
+      <!-- Source a changer -->
+      <img src={{ArticleSelected.source}} class="img-fluid" alt={{ArticleSelected.description}} id="imgPrincipale" />
+      <div class="NewPromoExclu blooshop_fond_gris">
+        NOUVEAUTÉ!
+      </div>
+    </div>
+
+    <div class="col-12 col-md-5" summary="Info de l'article">
+      <div class="row">
+        <div class="col-12 mt-md-0 mt-sm-3" summary="Libellé">
+          <h1 class="blooshop_gris_4B blooshop_gris_4B h1_violet">
+            {{ArticleSelected.description}}
+          </h1>
+        </div>
+        <div class="col-6 text-left mt-md-0 titre_2" summary="La référence de l'article">
+          Réf : {{ArticleSelected.ref}}
+        </div>
+
+        <div class="col-6 text-right" summary="prix">
+          <div id="contenu_prix_ref">
+            <div id="dispo_prix">
+              <span class="prix_normal">{{ArticleSelected.price}} DTN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-2" summary="Les références">
+          <div class="text_couleur titre_2b">
+            <img src={{ArticleSelected.color[0].sourceColor}} alt="Beige" title="Beige" align="center"
+              class="coloris" />
+            {{ArticleSelected.color[0].nom}}
+          </div>
+
+          <ul class="row choixReference ui-sortable flex-center">
+            <li class="ui-state-default ui-state-active listeReference" id="li_28868">
+              S
+            </li>
+
+            <li class="ui-state-default listeReference" id="li_28869">
+              M
+            </li>
+
+            <li class="ui-state-default listeReference" id="li_28870">
+              L
+            </li>
+          </ul>
+
+          <div class="row renseignerEmail mb-3 rounded" style="display: none;">
+            <div class="col-12 text-right cliquable m-1" onclick="javascript:$('.renseignerEmail').hide();">
+              <i class="fas fa-times"></i>
+            </div>
+            <!-- Material outline input with prefix-->
+
+            <div class="col-12 md-outline">
+              <button type="submit"
+                class="btn btn-block btnInput btn-dark btn-md btn-rounded mt-0 waves-effect waves-light"
+                onclick="javascript:renseignerEmail();return false;">
+                <i class="fa fa-envelope mr-3"></i>VALIDER MON EMAIL
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-3 AjouterAuPanierPrincipal" id="AjouterAuPanierPrincipal" summary="Ajouter au panier">
+          <div class="justify-content-center row">
+            <div class="col-10 AjouterAuPanierPrincipal">
+              <button type="button" class="btn btnInput btn-block btn-rounded btn-dark" data-toggle-tooltip="tooltip"
+                data-toggle="modal" data-placement="top" data-target="#modalAjouterPanier-1">
+                <img src="/assets/images/graphisme/blooshop_bag.png" width="30" alt="" border="0" class="mr-3" />
+                AJOUTER AU PANIER
+              </button>
+            </div>
+
+            <div class="col-2 titre_30 blooshop_gris justify-content-right wl_7259">
+              <span class="wishlist wl_7259">
+
+                <!-- Fonction tzid panier neksa  -->
+                <img src="/assets/images/graphisme/coeur_rose_vide.png" width="30" alt="" border="0" />
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal debut : modalAjouterPanier -->
+        <!-- Modal debut : modalAjouterPanier -->
+        <div class="modal fade right" id="modalAjouterPanier-1" tabindex="-1" role="dialog"
+          aria-labelledby="modalAjouterPanierLabel">
+          <div id="modalDialogAjouterPanier-1"
+            class="modal-dialog modal-dialog-scrollable modal-fluid modal-full-height modal-right modal-notify modal-info modalPanier"
+            role="document">
+            <div class="modal-content modal-content-Panier modal-full-height">
+              <!--Header-->
+              <div class="modal-header blooshop_fond_gris">
+                <p class="heading lead font-weight-bold">
+                  <img src="https://www.blooshop.fr/graphisme/blooshop_bag_blanc.png" width="30" alt="" border="0"
+                    class="mt-n2" />
+                  Panier
+                </p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">×</span>
+                </button>
+              </div>
+
+              <!--Body-->
+              <div class="modal-body scrollbar-blooshop" id="modalAjouterPanierLabel">
+                <div class="text-center">
+                  <i class="fa fa-check fa-3x mb-3 animated rotateIn success-ic blooshop_noir">
+                    <br />
+                    <span class="texte_14">Votre <strong>article</strong> est ajouté au
+                      panier</span>
+                  </i>
+                </div>
+
+                <p id="listePanier" class="text-center">
+                  <strong>Aucun article </strong>
+                </p>
+              </div>
+
+              <!--Footer-->
+              <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btnInput waves-effect waves-light white-ic blooshop_fond_gris"
+                  data-dismiss="modal">
+                  <i class="fa fa-angle-double-left m-0 p-2"></i>
+                  Continuer
+                </a>
+                <a type="button" class="btn btnInput waves-effect waves-light white-ic blooshop_fond_gris_BA"
+                  href="https://www.blooshop.fr/panier.php">
+                  <img src="https://www.blooshop.fr/graphisme/blooshop_bag_blanc.png" width="30" alt="" border="0"
+                    class="mr-2" />
+                  Panier
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal fin : modalAjouterPanier -->
+
+        <div class="container blooshop_fond_gris">
+          <div class="col-12 m-2">
+            <div class="offreArticle">
+              LIVRAISON OFFERTE EN 24H A
+              PARTIR DE 99,99 DTN D'ACHAT EN TUNISIE
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-3" summary="Les coloris">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="p-1 p-md-3 col-3 mb-4 pb-4">
+              <!-- Collection card -->
+              <div class="card collection-card z-depth-1-half text-center">
+                <!-- Card image -->
+                <div class="view zoom">
+
+                  <!-- Lazem nbadel l fonction eli f west l balise a nahki aal href lazem ttnaha  -->
+                  <a href="https://www.blooshop.fr/article/baggy_moulant_femme_kaki_ref_6578_7130.php#fileAriane">
+                    <img src={{ArticleSelected.color[1].sourcePic}} class="img-fluid img-rounded" width="100%" />
+                  </a>
+
+                  <div class="noPadding stripe light" style="bottom: 1rem;">
+                    <a href="https://www.blooshop.fr/article/baggy_moulant_femme_kaki_ref_6578_7130.php#fileAriane">
+                      <p class="letterSpacing0">
+                        {{ArticleSelected.color[1].nom}} <i class="fas fa-angle-right"></i>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <!-- Card image -->
+              </div>
+              <!-- Collection card -->
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="p-1 p-md-3 col-3 mb-4 pb-4">
+              <!-- Collection card -->
+              <div class="card collection-card z-depth-1-half text-center">
+                <!-- Card image -->
+                <div class="view zoom">
+
+                  <!-- lFonction zeda lazem tbadalha tansehsh -->
+                  <a href="https://www.blooshop.fr/article/baggy_moulant_femme_noir_ref_6578_6493.php#fileAriane">
+                    <img src={{ArticleSelected.color[2].sourcePic}} class="img-fluid img-rounded" width="100%" />
+                  </a>
+
+                  <div class="noPadding stripe dark" style="bottom: 1rem;">
+                    <a href="https://www.blooshop.fr/article/baggy_moulant_femme_noir_ref_6578_6493.php#fileAriane">
+                      <p class="letterSpacing0">
+                        {{ArticleSelected.color[2].nom}} <i class="fas fa-angle-right"></i>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <!-- Card image -->
+              </div>
+              <!-- Collection card -->
+            </div>
+            <!-- Grid column -->
+          </div>
+        </div>
+
+        <div class="col-12" summary="Résumé et détails">
+          <!--Accordion wrapper-->
+          <div class="accordion md-accordion" id="accordionResumeDescription" role="tablist"
+            aria-multiselectable="true">
+            <!-- Accordion card -->
+            <!-- Accordion card -->
+
+            <!-- Accordion card -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header pl-0" role="tab" id="headingDescription">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionResumeDescription"
+                  href="#collapseDescription" aria-expanded="false" aria-controls="collapseDescription">
+                  <h5 class="mb-0 letterSpacing7">
+                    DESCRIPTION
+                    <i class="fas fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+
+              <!-- Card body -->
+              <div id="collapseDescription" class="collapse" role="tabpanel" aria-labelledby="headingDescription"
+                data-parent="#accordionResumeDescription">
+                <div class="card-body pl-0">
+                  <p></p>
+                  <p><strong>COMPOSITION :</strong></p>
+                  <p>Polyester 95%</p>
+                  <p>Elasthane 5%</p>
+                  <h3>
+                    <span style="color: #ff0000;">LE MANNEQUIN MESURE 1M72 ET PORTE UNE TAILLE S.</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion card -->
+          </div>
+          <!-- Accordion wrapper -->
+        </div>
+
+        <div class="col-12 mt-3" summary="Arguments commerciaux">
+          <div class="rounded">
+            <div class="footer-copyright text-center py-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 mb-md-0 mb-3">
+                    <img class="footer_arguments" src="../assets/images/graphisme/footer_satisfait.png"
+                      title="SATISFAIT ou REMBOURSÉ" alt="SATISFAIT ou REMBOURSÉ" />
+                  </div>
+                  <div class="col-6 mb-md-0 mb-3">
+                    <img class="footer_arguments" src="../assets/images/graphisme//footer_livraison.png"
+                      title="LIVRAISON EXPRESS" alt="LIVRAISON EXPRESS" />
+                  </div>
+                  <div class="col-6 mb-md-0 mb-3">
+                    <img class="footer_arguments" src="../assets/images/graphisme/footer_retour.png"
+                      title="RETOUR OFFERT" alt="RETOUR OFFERT" />
+                  </div>
+                  <div class="col-6 mb-md-0 mb-3">
+                    <img class="footer_arguments" src="../assets/images/graphisme/footer_paiement.png"
+                      title="PAIEMENT SÉCURISÉ" alt="PAIEMENT SÉCURISÉ" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- </div> -->
+</div>
+
+<!-- Meilleures ventes section -->
+<div class="container pb-3 mt-3" *ngIf="Articles_rater_pas">
+  <div class="container">
+    <div class="row">
+      <div class="flex-fill" style="z-index:44;">
+        <div class="titreListeArticle">
+          &nbsp;
+          VOUS AIMERIEZ AUSSI &nbsp;
+          <div class="blooshop_fond_gris" style="z-index:5;">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="espace"></div>
+</div>
+<div class="row  noMargin pt-3 pb-3 mt-3" *ngIf="Articles_rater_pas">
+  <div class="container" id="imagesAccueil">
+    <section class="container text-center">
+      <!-- Grid row -->
+      <swiper [config]="config">
+
+        <div class="swiper-wrapper">
+          <div class=" swiper-slide p-1 p-md-3 col-3 mb-0 pb-4" *ngFor=" let Meilleure of Meilleures">
+            <!-- Card -->
+            <div class="card card-cascade narrower card-ecommerce">
+              <!-- Card image view-cascade -->
+              <div class="view overlay waves-effect">
+                <a>
+
+                  <img [src]=Meilleure.source id='imgList8193'
+                    class="card-img-top img-responsive img-rounded photo_pleine" alt="{{Meilleure.description}}"
+                    title="{{Meilleure.description}}" sourceImg1={{Meilleure.source}} sourceImg2={{Meilleure.source2}}
+                    appChangeImg>
+
+                  <div class="NewPromoExclu blooshop_fond_gris" id="versionForcé">
+                    NOUVEAUTÉ! </div>
+                  <div class="rgba-white-slight reduireNewPromoExclu"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body card-body-cascade text-center m-1">
+
+                <!-- Description -->
+                <p class="card-text cardTextLibelle">
+                  <a href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php#fileAriane"
+                    title="Combinaison Femme Cargo Noir ">
+                    {{Meilleure.description}} </a>
+                </p>
+
+                <div class="text_couleur" style="min-height: 22px;">
+
+                  <a class="lien_liste_produit_coloris" title="{{Meilleure.description}}"
+                    href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php"
+                    *ngFor="let color of Meilleure.color">
+
+                    <img src="{{color.sourceColor }}" alt="{{color.nom}}" title="{{color.nom}}" class="coloris"
+                      (mouseenter)="moment=Meilleure.source;Meilleure.source=color.sourcePic;"
+                      (mouseleave)="Meilleure.source=moment;">
+                  </a>
+
+                </div>
+
+                <!-- Card footer -->
+                <div class="card-footer px-1" style="border:0;">
+                  <span class="float-left font-weight-bold">
+                    <span class="prix_normal">{{Meilleure.price}} DTN</span>
+
+                  </span>
+
+                  <!--******** Add method Add to basket****** -->
+                  <span class="float-right">
+                    <a title="Choisir votre référence (3)" type="button" href="" data-toggle-tooltip="tooltip"
+                      data-toggle="modal" data-placement="top" data-target="#modalChoisirReference-1"
+                      class="material-tooltip-main">
+                      <img src="assets/images/graphisme/blooshop_bag.png" width="30" alt="" border="0" class="ml-1"
+                        onclick="javascript:changeArticleReferenceStock(8193,'30650',86);">
+                    </a>
+                  </span>
+                  <!--******** Add method Add to wishlist****** -->
+
+                  <span class="float-right justify-content-right wl_8193">
+                    <span class="wishlist wl_8193">
+                      <img src="assets/images/graphisme/coeur_rose_vide.png" width="30" alt="" border="0"
+                        onclick="AddRemoveWishList(0,8193,'Add','');return false;">
+                    </span>
+                  </span>
+                </div> <!-- Card footer -->
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+          </div>
+
+        </div>
+
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="carousel-control-prev " href="#carousel-example-1z" role="button" data-slide="prev">
+            <span class="blooshop_fond_gris_F5 blooshop_noir fa-angle-left fas p-2 titre_20b"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next " href="#carousel-example-1z" role="button" data-slide="next">
+            <span class="blooshop_fond_gris_F5 blooshop_noir fa-angle-right fas p-2 titre_20b"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--/.Controls-->
+
+      </swiper>
+
+    </section>
+  </div>
+</div>
+
+<!-- Footer -->
+<app-footer></app-footer>
