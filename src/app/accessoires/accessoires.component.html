@@ -1,1 +1,207 @@
-<p>accessoires works!</p>
+<app-header *ngIf="articleAccessoires"></app-header>
+
+<!-- Section: Products v.1 -->
+
+<section class="container text-center" *ngIf="articleAccessoires">
+  <!-- Grid row -->
+  <div class="row">
+    <div
+      class="p-1 p-md-3 col-6 col-lg-4 col-md-6 mb-lg-0 pb-4"
+      *ngFor="let accessoire of articleAccessoires"
+    >
+      <!-- Card -->
+      <div class="card card-cascade narrower card-ecommerce">
+        <!-- Card image view-cascade -->
+        <div class="view overlay waves-effect" [routerLink]="['/single', accessoire.ref]">
+          
+            <img
+              src="{{accessoire.source}}"
+              id="imgList8218"
+              class="card-img-top img-responsive img-rounded photo_pleine"
+              alt="{{ accessoire.description }}"
+              title="{{ accessoire.description }}"
+              sourceImg1="{{ accessoire.source }}"
+              sourceImg2="{{ accessoire.source2 }}"
+              appChangeImg
+            />
+            <div class="NewPromoExclu blooshop_fond_gris">
+              NOUVEAUTÉ!
+            </div>
+            <div class="rgba-white-slight reduireNewPromoExclu"></div>
+          
+        </div>
+        <!-- Card image -->
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center m-1">
+          <!-- Description -->
+          <p class="card-text cardTextLibelle">
+            <a title="{{ accessoire.description }}">
+              {{ accessoire.description }}
+            </a>
+          </p>
+
+          <div class="text_couleur" style="min-height: 22px;">
+            <a
+              class="lien_liste_produit_coloris"
+              title="{{ accessoire.description }}"
+              [routerLink]="['/single', accessoire.ref]"
+              *ngFor="let color of accessoire.color"
+            >
+              <img
+                src="{{ color.sourceColor }}"
+                alt="{{ color.nom }}"
+                title="{{ color.nom }}"
+                class="coloris"
+                (mouseenter)="
+                  moment = accessoire.source;
+                  accessoire.source = color.sourcePic
+                "
+                (mouseleave)="accessoire.source = moment"
+              />
+            </a>
+          </div>
+
+          <!-- Card footer -->
+          <div class="card-footer px-1" style="border: 0;">
+            <span class="float-left font-weight-bold">
+              <span class="prix_normal">{{ accessoire.price }} DTN</span>
+            </span>
+
+            <!-- ********* Add method Add to basket ********** -->
+            <span class="float-right">
+              <a
+                title="Choisir votre référence (3)"
+                type="button"
+                href=""
+                data-toggle-tooltip="tooltip"
+                data-toggle="modal"
+                data-placement="top"
+                data-target="#centralModalDanger"
+                class="material-tooltip-main"
+              >
+                <img
+                  src="assets/images/graphisme/blooshop_bag.png"
+                  width="30"
+                  alt=""
+                  border="0"
+                  class="ml-1"
+                  (click)="openNav()"
+                />
+              </a>
+            </span>
+
+            <span class="float-right justify-content-right wl_8193">
+              <span class="wishlist wl_8193">
+                <img
+                  src="assets/images/graphisme/coeur_rose_vide.png"
+                  width="30"
+                  alt=""
+                  border="0"
+                  onclick="this.src='assets/images/graphisme/coeur_plein.png'"
+                  (click)="Ajouter(accessoire)"
+                />
+                <!-- onclick="AddRemoveWishList(0,8193,'Add','');return false;" -->
+              </span>
+            </span>
+          </div>
+
+          <!-- Card footer -->
+        </div>
+        <!-- Card content -->
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Modal debut : modalAjouterPanier -->
+    <div
+      class="modal fade right"
+      id="centralModalDanger"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalAjouterPanierLabel"
+    >
+      <div
+        id="modalDialogAjouterPanier-1"
+        class="modal-dialog modal-dialog-scrollable modal-fluid modal-full-height modal-right modal-notify modal-info modalPanier"
+        role="document"
+      >
+        <div class="modal-content modal-content-Panier modal-full-height">
+          <!--Header-->
+          <div class="modal-header blooshop_fond_gris">
+            <p class="heading lead font-weight-bold">
+              <img
+                src="graphisme/blooshop_bag_blanc.png"
+                width="30"
+                alt=""
+                border="0"
+                class="mt-n2"
+              />
+              Panier
+            </p>
+
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              (click)="closeNav()"
+            >
+              <span aria-hidden="true" class="white-text">×</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div
+            class="modal-body scrollbar-blooshop"
+            id="modalAjouterPanierLabel"
+          >
+            <div class="text-center">
+              <i
+                class="fa fa-check fa-3x mb-3 animated rotateIn success-ic blooshop_noir"
+              >
+                <br />
+                <span class="texte_14"
+                  >Votre <strong>article</strong> est ajouté au panier</span
+                >
+              </i>
+            </div>
+
+            <p id="listePanier" class="text-center">
+              <strong>Aucun article </strong>
+            </p>
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <a
+              type="button"
+              class="btn btnInput waves-effect waves-light white-ic blooshop_fond_gris"
+              data-dismiss="modal"
+            >
+              <i class="fa fa-angle-double-left m-0 p-2"></i>
+              Continuer
+            </a>
+            <a
+              type="button"
+              class="btn btnInput waves-effect waves-light white-ic blooshop_fond_gris_BA"
+              href="panier.php"
+            >
+              <img
+                src="graphisme/blooshop_bag_blanc.png"
+                width="30"
+                alt=""
+                border="0"
+                class="mr-2"
+              />
+              Panier
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Central Modal Medium Danger-->
+  </div>
+</section>
+<app-footer *ngIf="articleAccessoires"></app-footer>
+<app-animation [hidden]="articleAccessoires"></app-animation>

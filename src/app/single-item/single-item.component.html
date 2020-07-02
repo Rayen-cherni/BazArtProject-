@@ -74,17 +74,10 @@
           </div>
 
           <ul class="row choixReference ui-sortable flex-center">
-            <li class="ui-state-default ui-state-active listeReference" id="li_28868">
-              S
+            <li class="ui-state-default ui-state-active listeReference" id="li_28868" *ngFor="let taille of ArticleSelected.taille">
+              {{taille}}
             </li>
 
-            <li class="ui-state-default listeReference" id="li_28869">
-              M
-            </li>
-
-            <li class="ui-state-default listeReference" id="li_28870">
-              L
-            </li>
           </ul>
 
           <div class="row renseignerEmail mb-3 rounded" style="display: none;">
@@ -166,7 +159,7 @@
                   Continuer
                 </a>
                 <a type="button" class="btn btnInput waves-effect waves-light white-ic blooshop_fond_gris_BA"
-                  href="https://www.blooshop.fr/panier.php">
+                  href="">
                   <img src="https://www.blooshop.fr/graphisme/blooshop_bag_blanc.png" width="30" alt="" border="0"
                     class="mr-2" />
                   Panier
@@ -192,7 +185,7 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="p-1 p-md-3 col-3 mb-4 pb-4">
+            <div class="p-1 p-md-3 col-3 mb-4 pb-4" *ngFor="let color of ArticleSelected.color">
               <!-- Collection card -->
               <div class="card collection-card z-depth-1-half text-center">
                 <!-- Card image -->
@@ -200,13 +193,13 @@
 
                   <!-- Lazem nbadel l fonction eli f west l balise a nahki aal href lazem ttnaha  -->
                   <a href="https://www.blooshop.fr/article/baggy_moulant_femme_kaki_ref_6578_7130.php#fileAriane">
-                    <img src={{ArticleSelected.color[1].sourcePic}} class="img-fluid img-rounded" width="100%" />
+                    <img src={{color.sourcePic}} class="img-fluid img-rounded" width="100%" />
                   </a>
 
                   <div class="noPadding stripe light" style="bottom: 1rem;">
                     <a href="https://www.blooshop.fr/article/baggy_moulant_femme_kaki_ref_6578_7130.php#fileAriane">
                       <p class="letterSpacing0">
-                        {{ArticleSelected.color[1].nom}} <i class="fas fa-angle-right"></i>
+                        {{color.nom}} <i class="fas fa-angle-right"></i>
                       </p>
                     </a>
                   </div>
@@ -218,29 +211,7 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="p-1 p-md-3 col-3 mb-4 pb-4">
-              <!-- Collection card -->
-              <div class="card collection-card z-depth-1-half text-center">
-                <!-- Card image -->
-                <div class="view zoom">
-
-                  <!-- lFonction zeda lazem tbadalha tansehsh -->
-                  <a href="https://www.blooshop.fr/article/baggy_moulant_femme_noir_ref_6578_6493.php#fileAriane">
-                    <img src={{ArticleSelected.color[2].sourcePic}} class="img-fluid img-rounded" width="100%" />
-                  </a>
-
-                  <div class="noPadding stripe dark" style="bottom: 1rem;">
-                    <a href="https://www.blooshop.fr/article/baggy_moulant_femme_noir_ref_6578_6493.php#fileAriane">
-                      <p class="letterSpacing0">
-                        {{ArticleSelected.color[2].nom}} <i class="fas fa-angle-right"></i>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-                <!-- Card image -->
-              </div>
-              <!-- Collection card -->
-            </div>
+            
             <!-- Grid column -->
           </div>
         </div>
@@ -347,8 +318,8 @@
             <!-- Card -->
             <div class="card card-cascade narrower card-ecommerce">
               <!-- Card image view-cascade -->
-              <div class="view overlay waves-effect">
-                <a>
+              <div class="view overlay waves-effect" [routerLink]="['/single', Meilleure.ref]">
+                
 
                   <img [src]=Meilleure.source id='imgList8193'
                     class="card-img-top img-responsive img-rounded photo_pleine" alt="{{Meilleure.description}}"
@@ -358,7 +329,7 @@
                   <div class="NewPromoExclu blooshop_fond_gris" id="versionForcé">
                     NOUVEAUTÉ! </div>
                   <div class="rgba-white-slight reduireNewPromoExclu"></div>
-                </a>
+                
               </div>
               <!-- Card image -->
               <!-- Card content -->
