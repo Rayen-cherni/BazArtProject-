@@ -107,7 +107,13 @@ export const MEILLEURES : Raterpas[] = [
         source2: "assets/images/vetement/robe/r4.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "bleu",
+            sourceColor: "assets/images/coloris/4682_bleu.jpg",
+            sourcePic: "assets/images/vetement/robe/r4.jpeg"
+          }
+        ]
       },
       {
         ref: "5",
@@ -122,7 +128,13 @@ export const MEILLEURES : Raterpas[] = [
         source2: "assets/images/vetement/robe/r5.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "biege",
+            sourceColor: "assets/images/coloris/4886_beige.jpg",
+            sourcePic: "assets/images/vetement/robe/r5.jpeg"
+          },
+        ]
       },
       {
         ref: "6",
@@ -137,7 +149,13 @@ export const MEILLEURES : Raterpas[] = [
         source2: "assets/images/vetement/robe/r6.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "bleu",
+            sourceColor: "assets/images/coloris/4682_bleu.jpg",
+            sourcePic: "assets/images/vetement/robe/r4.jpeg"
+          }
+        ]
       },
       {
         ref: "7",
@@ -152,7 +170,13 @@ export const MEILLEURES : Raterpas[] = [
         source2: "assets/images/vetement/robe/r7.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "rose",
+            sourceColor: "assets/images/coloris/5391_rose.jpg",
+            sourcePic: "assets/images/vetement/robe/r4.jpeg"
+          }
+        ]
       },
       {
         ref: "8",
@@ -232,7 +256,13 @@ export const MEILLEURES : Raterpas[] = [
         source2: "assets/images/vetement/shoes/s3.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "black",
+            sourceColor: "assets/images/coloris/4888_noir.jpg",
+            sourcePic: "assets/images/vetement/shoes/s3.jpeg"
+          },
+        ]
       },
       {
         ref: "11",
@@ -249,7 +279,13 @@ export const MEILLEURES : Raterpas[] = [
         source2: "assets/images/vetement/shoes/s4.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "black",
+            sourceColor: "assets/images/coloris/4888_noir.jpg",
+            sourcePic: "assets/images/vetement/shoes/s4.jpeg"
+          },
+        ]
       },
       {
         ref: "12",
@@ -265,6 +301,12 @@ export const MEILLEURES : Raterpas[] = [
         source2: "assets/images/vetement/shoes/s5.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "black",
+            sourceColor: "assets/images/coloris/4888_noir.jpg",
+            sourcePic: "assets/images/vetement/shoes/s5.jpeg"
+          },
+        ]
       }
 ]

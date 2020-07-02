@@ -180,7 +180,7 @@ export const ARTICLESRATERPAS: Raterpas[] = [
             sourcePic: "assets/images/vetement/shoes/1/s2.jpeg"
           },
           {
-            nom: "grenn",
+            nom: "green",
             sourceColor: "assets/images/coloris/5732_vert_.jpg",
             sourcePic: "assets/images/vetement/shoes/1/s1.jpeg"
           }
@@ -232,7 +232,13 @@ export const ARTICLESRATERPAS: Raterpas[] = [
         source2: "assets/images/vetement/shoes/s3.jpeg",
         source3: "",
         source4: "",
-        color: []
+        color: [
+          {
+            nom: "black",
+            sourceColor: "assets/images/coloris/4888_noir.jpg",
+            sourcePic: "assets/images/vetement/shoes/2/s3.jpeg"
+          }
+        ]
       },
       {
         ref: "11",

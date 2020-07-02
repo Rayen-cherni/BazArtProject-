@@ -1,12 +1,14 @@
+// Fixed
+
 import { Article } from './article'
 import { Similaire } from './similaire';
 
 export const Middle: Article[] = [
     {
-        ref: '0',
-        description: 'pull',
-        price:'4.99',
-        source: 'assets/images/imagesArticles/3.jpg',
+        ref: '',
+        description: '',
+        price:'',
+        source: 'assets/images/imagesArticles/middle1.jpg',
         source2:'',
         source3:'',
         source4:'',
@@ -14,10 +16,10 @@ export const Middle: Article[] = [
     },
     
     {
-        ref: '1',
-        description: 'chaussures de soirée',
-        price:'4.99',
-        source: 'assets/images/imagesArticles/nouveautes2.jpg',
+        ref: '',
+        description: '',
+        price:'',
+        source: 'assets/images/imagesArticles/middle2.jpeg',
         source2:'',
         source3:'',
         source4:'',

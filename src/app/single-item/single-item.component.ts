@@ -18,7 +18,7 @@ export class SingleItemComponent implements OnInit {
   ArticleSelected: Raterpas;
   Articles_rater_pas: Raterpas[];
   Meilleures: Raterpas[];
-  //MeilleureSelected: Raterpas;
+  MeilleureSelected: Raterpas;
 
   list: Raterpas[];
   moment: string;
@@ -33,17 +33,18 @@ export class SingleItemComponent implements OnInit {
     this.raterpasService.getArticlesRaterPas()
     .subscribe(  (articleNeRaterPas) => this.Articles_rater_pas = articleNeRaterPas);
     // Selection with params
-    this.route.params.pipe(switchMap((params: Params)=>{
-      return this.raterpasService.getSelectedArticlesRaterPas(params['ref'])
+    this.route.params.pipe(switchMap((params1: Params)=>{
+      return this.raterpasService.getSelectedArticlesRaterPas(params1['ref'])
     }))
-    .subscribe((ArticleSelected)=>{this.ArticleSelected=ArticleSelected})
+    .subscribe((ArticlesRaterPasSelected)=>{this.ArticleSelected=ArticlesRaterPasSelected})
+    
 
-    // MeilleuresVnetes methods
+    // MeilleuresVentes methods
     this.meilleuresVenteService.getMeilleures()
     .subscribe((meilleuresVente)=>this.Meilleures=meilleuresVente);
     //Selection with params
-    this.route.params.pipe(switchMap((params: Params)=>{
-      return this.meilleuresVenteService.getSelectedMeilleure(params['ref'])
+    this.route.params.pipe(switchMap((params2: Params)=>{
+      return this.meilleuresVenteService.getSelectedMeilleure(params2['ref'])
     }))
     .subscribe((MeilleureSelected)=>{this.ArticleSelected=MeilleureSelected})
 
@@ -53,7 +54,7 @@ export class SingleItemComponent implements OnInit {
   config: SwiperOptions = {
     pagination: { el: '.swiper-pagination', clickable: true },
     autoHeight: true,
-    allowTouchMove: true,
+    allowTouchMove: true, 
     autoplay: {
       delay: 6000,
       disableOnInteraction: true
