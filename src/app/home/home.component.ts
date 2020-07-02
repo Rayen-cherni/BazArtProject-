@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Raterpas } from '../shared/raterpas';
 import { RaterpasService } from '../services/raterpas.service';
 import { Article } from '../shared/article';
@@ -6,6 +6,7 @@ import { ArticleService } from '../services/article.service';
 import { MeilleuresVentesService } from '../services/meilleures-ventes.service';
 import { SwiperOptions } from 'swiper';
 import { wishList } from '../shared/wishList';
+import { inject } from '@angular/core/testing';
 
 @Component({
   selector: 'app-home',
@@ -25,7 +26,7 @@ export class HomeComponent implements OnInit {
   
   constructor(private raterpasService : RaterpasService,
     private articleService: ArticleService,
-    private meilleuresVenteService: MeilleuresVentesService) { 
+    private meilleuresVenteService: MeilleuresVentesService,) { 
     }
 
   ngOnInit(): void {

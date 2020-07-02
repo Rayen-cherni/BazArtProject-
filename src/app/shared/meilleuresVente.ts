@@ -2,269 +2,269 @@ import { Raterpas } from './raterpas';
 
 export const MEILLEURES : Raterpas[] = [
     {
-        ref:'0',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '22,23',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
+        ref: "1",
+        description: "Combinaison Femme Ete",
+        price: "200",
+        taille: [
+          "Taille Unique"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/ensemble/1/e1.jpeg",
+        source2: "assets/images/vetement/ensemble/1/e2.jpeg",
+        source3: "",
+        source4: "",
         color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
+          {
+            nom: "red",
+            sourceColor: "assets/images/coloris/4760_rouge.jpg",
+            sourcePic: "assets/images/vetement/ensemble/1/e3.jpeg"
+          },
+          {
+            nom: "orange",
+            sourceColor: "assets/images/coloris/5390_orange.jpg",
+            sourcePic: "assets/images/vetement/ensemble/1/e4.jpeg"
+          },
+          {
+            nom: "biege",
+            sourceColor: "assets/images/coloris/4886_beige.jpg",
+            sourcePic: "assets/images/vetement/ensemble/1/e1.jpeg"
+          },
+          {
+            nom: "purple",
+            sourceColor: "assets/images/coloris/4689_rose.jpg",
+            sourcePic: "assets/images/vetement/ensemble/1/e2.jpeg"
+          }
         ]
-
-    },
-    {
-        ref:'1',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '33',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
+      },
+      {
+        ref: "2",
+        description: "Robe Femme Fleurie",
+        price: "200",
+        taille: [
+          "Taille Unique"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/robe/1/r1.jpeg",
+        source2: "assets/images/vetement/robe/1/r2.jpeg",
+        source3: "",
+        source4: "",
         color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
+          {
+            nom: "black",
+            sourceColor: "assets/images/coloris/4888_noir.jpg",
+            sourcePic: "assets/images/vetement/robe/1/r1.jpeg"
+          },
+          {
+            nom: "yellow",
+            sourceColor: "assets/images/coloris/8576_moutarde.jpg",
+            sourcePic: "assets/images/vetement/robe/1/r3.jpeg"
+          },
+          {
+            nom: "purple",
+            sourceColor: "assets/images/coloris/4689_rose.jpg",
+            sourcePic: "assets/images/vetement/robe/1/r2.jpeg"
+          }
         ]
-    },
-
-    {
-        ref:'2',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '100,44',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
+      },
+      {
+        ref: "3",
+        description: "Femmes Bohème Robes Longues",
+        price: "22,23",
+        taille: [
+          "Taille Unique"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/robe/2/r1.jpeg",
+        source2: "assets/images/vetement/robe/2/r2.jpeg",
+        source3: "",
+        source4: "",
         color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
+          {
+            nom: "yellow",
+            sourceColor: "assets/images/coloris/8576_moutarde.jpg",
+            sourcePic: "assets/images/vetement/robe/2/r1.jpeg"
+          },
+          {
+            nom: "purple",
+            sourceColor: "assets/images/coloris/4689_rose.jpg",
+            sourcePic: "assets/images/vetement/robe/2/r2.jpeg"
+          }
         ]
-    },
-    {
-        ref:'3',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '2222',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
+      },
+      {
+        ref: "4",
+        description: "Bohème Robes Longues",
+        price: "22,23",
+        taille: [
+          "Taille Unique"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/robe/r4.jpeg",
+        source2: "assets/images/vetement/robe/r4.jpeg",
+        source3: "",
+        source4: "",
+        color: []
+      },
+      {
+        ref: "5",
+        description: "Robe Femme V ",
+        price: "22,23",
+        taille: [
+          "Taille Unique"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/robe/r5.jpeg",
+        source2: "assets/images/vetement/robe/r5.jpeg",
+        source3: "",
+        source4: "",
+        color: []
+      },
+      {
+        ref: "6",
+        description: "Combinaison Femme",
+        price: "22,23",
+        taille: [
+          "Taille Unique"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/robe/r6.jpeg",
+        source2: "assets/images/vetement/robe/r6.jpeg",
+        source3: "",
+        source4: "",
+        color: []
+      },
+      {
+        ref: "7",
+        description: "robe",
+        price: "22,23",
+        taille: [
+          "Taille Unique"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/robe/r7.jpeg",
+        source2: "assets/images/vetement/robe/r7.jpeg",
+        source3: "",
+        source4: "",
+        color: []
+      },
+      {
+        ref: "8",
+        description: "Chaussure Mode Mule Plat",
+        price: "50",
+        taille: [
+          "40",
+          "41"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/shoes/1/s1.jpeg",
+        source2: "assets/images/vetement/shoes/1/s2.jpeg",
+        source3: "",
+        source4: "",
         color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
+          {
+            nom: "black",
+            sourceColor: "assets/images/coloris/4888_noir.jpg",
+            sourcePic: "assets/images/vetement/shoes/1/s3.jpeg"
+          },
+          {
+            nom: "orange",
+            sourceColor: "assets/images/coloris/5390_orange.jpg",
+            sourcePic: "assets/images/vetement/shoes/1/s2.jpeg"
+          },
+          {
+            nom: "grenn",
+            sourceColor: "assets/images/coloris/5732_vert_.jpg",
+            sourcePic: "assets/images/vetement/shoes/1/s1.jpeg"
+          }
         ]
-    },
-    {
-        ref:'4',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '700000',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
+      },
+      {
+        ref: "9",
+        description: " Chaussures Mode Confort",
+        price: "22,23",
+        taille: [
+          "41",
+          "43"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/shoes/2/s1.jpeg",
+        source2: "assets/images/vetement/shoes/2/s2.jpeg",
+        source3: "",
+        source4: "",
         color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
+          {
+            nom: "black",
+            sourceColor: "assets/images/coloris/4888_noir.jpg",
+            sourcePic: "assets/images/vetement/shoes/2/s3.jpeg"
+          },
+          {
+            nom: "biege",
+            sourceColor: "assets/images/coloris/4886_beige.jpg",
+            sourcePic: "assets/images/vetement/shoes/2/s2.jpeg"
+          },
+          {
+            nom: "blue",
+            sourceColor: "assets/images/coloris/6366_bleu.jpg",
+            sourcePic: "assets/images/vetement/shoes/2/s1.jpeg"
+          }
         ]
-    },
-    {
-        ref:'5',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '6000',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
-        color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
-        ]
-    },
-    {
-        ref:'6',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '44,23',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
-        color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
-        ]
-
-    },
-    {
-        ref:'7',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '155,23',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
-        color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
-        ]
-
-    },
-    {
-        ref:'8',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '99,23',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
-        color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
-        ]
-
-    },
-    {
-        ref:'9',
-        description: "Combinaison Femme Cargo Noir ",
-        price: '88,23',
-        source: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg',
-        source2: 'assets/images/aNePasRater/combinaison_femme_cargo_noir_ref_8042_8193a3f0.jpg',
-        source3:'',
-        source4:'',
-        color: [
-            {
-                nom: 'kaki',
-                sourceColor: 'assets/images/coloris/4851_kaki.jpg',
-                sourcePic: 'assets/images/aNePasRater/baggy_moulant_femme_kaki_ref_6578_71302bc4.jpg'
-            },
-            {
-                nom: 'noir',
-                sourceColor: 'assets/images/coloris/4846_noir.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_noir_ref_2054_8366f5a7.jpg'
-            },
-            {
-                nom: 'biege',
-                sourceColor: 'assets/images/coloris/4886_beige.jpg',
-                sourcePic: 'assets/images/aNePasRater/bas_de_jogging_femme_poches_beige_ref_2054_8368a3f0.jpg'
-            }
-        ]
-
-    },
+      },
+      {
+        ref: "10",
+        description: "Sandales",
+        price: "125",
+        taille: [
+          "40",
+          "41"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/shoes/s3.jpeg",
+        source2: "assets/images/vetement/shoes/s3.jpeg",
+        source3: "",
+        source4: "",
+        color: []
+      },
+      {
+        ref: "11",
+        description: "chaussures de soirée",
+        price: "130",
+        taille: [
+          "39",
+          "40",
+          "42"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/shoes/s4.jpeg",
+        source2: "assets/images/vetement/shoes/s4.jpeg",
+        source3: "",
+        source4: "",
+        color: []
+      },
+      {
+        ref: "12",
+        description: "Sandales",
+        price: "100",
+        taille: [
+          "42",
+          "40"
+        ],
+        favorie: false,
+        panier: false,
+        source: "assets/images/vetement/shoes/s5.jpeg",
+        source2: "assets/images/vetement/shoes/s5.jpeg",
+        source3: "",
+        source4: "",
+        color: []
+      }
 ]

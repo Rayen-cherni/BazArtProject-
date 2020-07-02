@@ -27,6 +27,9 @@ import { ChangeImgDirective } from './directives/change-img.directive';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { SingleItemComponent } from './single-item/single-item.component';
 
+// HTTP
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -50,10 +53,13 @@ import { SingleItemComponent } from './single-item/single-item.component';
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    HttpClientModule,
+
 
   ],
-  providers: [ArticleService, RaterpasService, MeilleuresVentesService ],
+  providers: [ArticleService, RaterpasService, MeilleuresVentesService,
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

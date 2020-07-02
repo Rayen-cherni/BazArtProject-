@@ -86,7 +86,7 @@
             <div class="row">
 
                 <!-- Grid column -->
-                <div class="p-1 p-md-3 col-3 mb-0 pb-4" *ngFor=" let Article of Articles_rater_pas">
+                <div class="p-1 p-md-3 col-3 mb-0 pb-4" *ngFor=" let Article of Articles_rater_pas | slice:0:4; let i=index">
                     <!-- Card -->
                     <div class="card card-cascade narrower card-ecommerce">
                         <!-- Card image view-cascade -->
@@ -96,7 +96,7 @@
 
                                 <img [src]="Article.source" id='imgList8193'
                                     class="card-img-top img-responsive img-rounded photo_pleine"
-                                    alt="{{Article. description}}" title="{{Article. description}}"
+                                    alt="{{Article.description}}" title="{{Article.description}}"
                                     sourceImg1={{Article.source}} sourceImg2={{Article.source2}} appChangeImg>
 
                                 <div class="NewPromoExclu blooshop_fond_gris">
@@ -110,17 +110,15 @@
 
                             <!-- Description -->
                             <p class="card-text cardTextLibelle">
-                                <a href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php#fileAriane"
-                                    title="{{Article. description}} ">
-                                    {{Article. description}} </a>
+                                <a title="{{Article.description}} ">
+                                    {{Article.description}} </a>
                             </p>
 
 
                             <div class="text_couleur" style="min-height: 22px;">
 
-                                <a class="lien_liste_produit_coloris" title="{{Article. description}}"
-                                    href="/article/combinaison_femme_cargo_noir_ref_8042_8193.php"
-                                    *ngFor="let color of Article.color">
+                                <a class="lien_liste_produit_coloris" title="{{Article.description}}"
+                                    [routerLink]="['/single', Article.ref]" *ngFor="let color of Article.color">
 
                                     <img src="{{color.sourceColor}}" alt="{{color.nom}}" title="{{color.nom}}"
                                         class="coloris"
