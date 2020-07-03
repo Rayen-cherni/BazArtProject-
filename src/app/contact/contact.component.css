@@ -1,0 +1,30 @@
+.trait
+{
+	width: 60px;
+	background-color: #CC9999;
+	height: 1px;
+}
+/* VERSION 2019 */
+.blooshop_fond_noir {background-color: #242323!important;color:white;}
+.blooshop_noir {color: #242323!important;}
+
+.blooshop_fond_gris_4B {background-color: #4B4B4B!important;}
+.blooshop_gris_4B {color: #4B4B4B!important;}
+
+.blooshop_fond_gris_C3, .blooshop_fond_gris {background-color: #D9C6C3!important;}
+.blooshop_gris_C3,.blooshop_gris {color: #D9C6C3!important;}
+
+.blooshop_fond_gris_BA {background-color: #BABABA!important;}
+.blooshop_gris_BA {color: #BABABA!important;}
+
+.blooshop_fond_gris_F5 {background-color: #F5F5F5!important;}
+.blooshop_gris_F5 {color: #F5F5F5!important;}
+
+.contact_lien
+{
+	font-size:14px;
+}
+
+#espaceContact{
+    margin-top: 100px;
+}

@@ -29,6 +29,8 @@ import { SingleItemComponent } from './single-item/single-item.component';
 
 // HTTP
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './contact/contact.component';
+import { FraisRetourComponent } from './frais-retour/frais-retour.component';
 
 
 
@@ -47,7 +49,9 @@ import { HttpClientModule } from '@angular/common/http';
     ChangeImgDirective,
     AnimationComponent,
     WishlistComponent,
-    SingleItemComponent
+    SingleItemComponent,
+    ContactComponent,
+    FraisRetourComponent
   ],
   imports: [
     BrowserModule,

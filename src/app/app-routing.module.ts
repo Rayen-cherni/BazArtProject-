@@ -8,6 +8,8 @@ import { PullComponent } from './pull/pull.component';
 import { HomeComponent } from './home/home.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { SingleItemComponent } from './single-item/single-item.component';
+import { ContactComponent } from './contact/contact.component';
+import { FraisRetourComponent } from './frais-retour/frais-retour.component';
 
 
 const routes: Routes = [
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: 'wishList', component: WishlistComponent},
   {path: 'single/:ref', component: SingleItemComponent},
   {path: 'single', component: SingleItemComponent},
+  {path:'contact', component:ContactComponent},
+  {path: 'frais-retour', component:FraisRetourComponent},
   {path:'', redirectTo:'home', pathMatch:'full'}
 ];
 
